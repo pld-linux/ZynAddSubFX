@@ -3,7 +3,7 @@ Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
 Version:	2.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
