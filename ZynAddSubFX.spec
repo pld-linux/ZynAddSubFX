@@ -44,14 +44,12 @@ sed -i -e "s|-O6|\$(OPTFLAGS)|" src/Makefile
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}} \
 	$RPM_BUILD_ROOT%{_desktopdir} \
-	$RPM_BUILD_ROOT%{_datadir}/%{name}/images \
-	$RPM_BUILD_ROOT%{_datadir}/%{name}/examples/Banks \
-	$RPM_BUILD_ROOT%{_datadir}/%{name}/examples/Instruments \
-	$RPM_BUILD_ROOT%{_datadir}/%{name}/examples/Scales
+	$RPM_BUILD_ROOT%{_datadir}/%{name}/images
 
 install -c src/zynaddsubfx $RPM_BUILD_ROOT%{_bindir}
-cp examples/*.xmz $RPM_BUILD_ROOT%{_datadir}/%{name}/examples
 install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
+mv banks/* examples/Banks
+cp -r examples $RPM_BUILD_ROOT%{_datadir}/%{name}/
 
 # NOTE:
 # Outdated, new version not ready yet
