@@ -17,7 +17,7 @@ Source1:	http://dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-doc-%{doc_ver
 Source2:	%{name}.desktop
 Patch0:		%{name}-jack.patch
 Patch1:		%{name}-optflags.patch
-URL:		http://zynaddsubfx.sourceforge.net
+URL:		http://zynaddsubfx.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	fftw-devel
