@@ -1,0 +1,11 @@
+--- ZynAddSubFX-1.2.0/src/Makefile.inc~	2003-03-19 06:25:12.000000000 -0800
++++ ZynAddSubFX-1.2.0/src/Makefile.inc	2003-03-21 11:54:57.000000000 -0800
+@@ -14,7 +14,7 @@
+ #Next line sets the audio output (OSS/JACK/PA)
+ LINUX_AUDIOOUT=OSS
+ #LINUX_AUDIOOUT=NONE
+-#LINUX_AUDIOOUT=JACK
++LINUX_AUDIOOUT=JACK
+ #for PortAudio (PA)
+ #LINUX_AUDIOOUT=PA
+ 
