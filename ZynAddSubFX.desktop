@@ -8,5 +8,5 @@ Exec=/usr/bin/zynaddsubfx
 Icon=
 Terminal=false
 Type=Application
-Categories=AudioVideo;Audio;
+Categories=Audio;
 # vi: encoding=utf-8
