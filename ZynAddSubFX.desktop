@@ -5,6 +5,6 @@ Comment=Software synthesizer
 Comment[pl]=Syntezator programowy
 Exec=/usr/bin/zynaddsubfx
 Icon=
-Terminal=0
+Terminal=false
 Type=Application
 Categories=Application;AudioVideo;
