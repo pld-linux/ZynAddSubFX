@@ -2,18 +2,18 @@
 # Conditional build:
 # _with_jack		- build with jack audio connection kit
 #
-%define 	doc_ver		1.4.2
+%define 	doc_ver		1.4.3
 Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
-Version:	1.4.2
+Version:	1.4.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-%{version}.tar.gz
-# Source0-md5:	0e071d5c9babf4cae71677bdb3805c29
+# Source0-md5:	1d89e2f469f48ba046deeec8e38ed02f
 Source1:	http://dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
-# Source1-md5:	fadaab515d02517fbbc3014164e4aca2
+# Source1-md5:	64a1c8d991e7ec9ffe0f9fbf929af62f
 Source2:	%{name}.desktop
 Patch0:		%{name}-jack.patch
 Patch1:		%{name}-optflags.patch
