@@ -2,7 +2,7 @@
 # Conditional build:
 # _with_jack		- build with jack audio connection kit
 #
-%define 	doc_ver  1.4.2
+%define 	doc_ver		1.4.2
 Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
@@ -44,7 +44,7 @@ cd src
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{%{_bindir},%{_datadir}/%{name}} \
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}} \
 	$RPM_BUILD_ROOT%{_desktopdir} \
 	$RPM_BUILD_ROOT%{_datadir}/%{name}/images \
 	$RPM_BUILD_ROOT%{_datadir}/%{name}/examples/Instruments \
