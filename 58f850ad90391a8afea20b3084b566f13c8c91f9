@@ -1,0 +1,4 @@
+- 2.1.1, STBR for Ac
+- updated BRs, dropped patches (pass arguments to Makefile, relplace
+  bogus flags with sed), commented out/added note about docs,
+  updated %%install section
