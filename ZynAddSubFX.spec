@@ -10,9 +10,9 @@ Version:	1.4.1
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://heanet.dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-%{version}.tar.gz
 # Source0-md5:	3891e3f5f314e3b975c22a8ba6b2955d
-Source1:	http://heanet.dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
+Source1:	http://dl.sourceforge.net/sourceforge/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
 # Source1-md5:	cec76cfc784fa294695ed00c95962706
 Source2:	%{name}.desktop
 Patch0:		%{name}-jack.patch
