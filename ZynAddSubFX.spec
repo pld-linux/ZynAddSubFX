@@ -6,10 +6,9 @@ Version:	2.2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://mesh.dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
 # Source0-md5:	22cce09757e765ad45b76a7cc90da612
 #Source1:	http://dl.sourceforge.net/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
-# Source1-md5:	64a1c8d991e7ec9ffe0f9fbf929af62f
 Source2:	%{name}.desktop
 URL:		http://zynaddsubfx.sourceforge.net/
 BuildRequires:	XFree86-devel
