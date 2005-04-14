@@ -1,14 +1,14 @@
-%define 	doc_ver		1.4.3
+%define 	doc_ver	1.4.3
 Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
-Version:	2.1.1
-Release:	2
+Version:	2.2.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
-# Source0-md5:	a078a85fc140bad8da6dd8114b9e5f41
-Source1:	http://dl.sourceforge.net/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
+Source0:	http://mesh.dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
+# Source0-md5:	22cce09757e765ad45b76a7cc90da612
+#Source1:	http://dl.sourceforge.net/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
 # Source1-md5:	64a1c8d991e7ec9ffe0f9fbf929af62f
 Source2:	%{name}.desktop
 URL:		http://zynaddsubfx.sourceforge.net/
@@ -31,7 +31,7 @@ ZynAddSubFX jest programowym syntezatorem zdolnym do tworzenia
 niezliczonej ilo¶ci instrumentów.
 
 %prep
-%setup -q -a1
+%setup -q
 sed -i -e "s|-O6|\$(OPTFLAGS)|" src/Makefile
 
 %build
