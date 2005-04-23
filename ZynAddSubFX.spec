@@ -3,7 +3,7 @@ Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
 Version:	2.2.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
@@ -35,6 +35,9 @@ sed -i -e "s|-O6|\$(OPTFLAGS)|" src/Makefile
 
 %build
 %{__make} -C src \
+%ifnarch %{ix86} amd64
+	ASM_F2I=NO \
+%endif
 	OPTFLAGS="%{rpmcflags}" \
 	LINUX_AUDIOOUT="OSS_AND_JACK" \
 	CXX="%{__cxx}"
