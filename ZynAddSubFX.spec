@@ -2,12 +2,12 @@
 Summary:	Realtime software synthesizer
 Summary(pl):	Syntezator programowy dzia³aj±cy w czasie rzeczywistym
 Name:		ZynAddSubFX
-Version:	2.2.0
-Release:	2
+Version:	2.2.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
-# Source0-md5:	22cce09757e765ad45b76a7cc90da612
+# Source0-md5:	fca8560e37d799bd20d17e22b11674d6
 #Source1:	http://dl.sourceforge.net/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
 Source2:	%{name}.desktop
 URL:		http://zynaddsubfx.sourceforge.net/
@@ -16,7 +16,7 @@ BuildRequires:	alsa-lib-devel
 BuildRequires:	fftw3-devel
 BuildRequires:	fltk-devel >= 1.1.3
 BuildRequires:	jack-audio-connection-kit-devel >= 0.66.3
-BuildRequires:	mxml >= 2.0
+BuildRequires:	mxml >= 2.2
 BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
