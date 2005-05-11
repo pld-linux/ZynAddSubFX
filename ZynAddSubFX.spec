@@ -18,6 +18,7 @@ BuildRequires:	fltk-devel >= 1.1.3
 BuildRequires:	jack-audio-connection-kit-devel >= 0.66.3
 BuildRequires:	mxml >= 2.2
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,7 +36,7 @@ sed -i -e "s|-O6|\$(OPTFLAGS)|" src/Makefile
 
 %build
 %{__make} -C src \
-%ifnarch %{ix86} amd64
+%ifnarch %{ix86} %{x8664}
 	ASM_F2I=NO \
 %endif
 	OPTFLAGS="%{rpmcflags}" \
