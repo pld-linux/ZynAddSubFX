@@ -1,6 +1,6 @@
 %define 	doc_ver	1.4.3
 Summary:	Realtime software synthesizer
-Summary(pl):	Syntezator programowy dzia≥aj±cy w czasie rzeczywistym
+Summary(pl.UTF-8):   Syntezator programowy dzia≈ÇajƒÖcy w czasie rzeczywistym
 Name:		ZynAddSubFX
 Version:	2.2.1
 Release:	1
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ZynAddSubFX is a software synthesizer capable of making a countless
 number of instruments.
 
-%description -l pl
+%description -l pl.UTF-8
 ZynAddSubFX jest programowym syntezatorem zdolnym do tworzenia
-niezliczonej ilo∂ci instrumentÛw.
+niezliczonej ilo≈õci instrument√≥w.
 
 %prep
 %setup -q
