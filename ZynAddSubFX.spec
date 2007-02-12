@@ -1,6 +1,6 @@
 %define 	doc_ver	1.4.3
 Summary:	Realtime software synthesizer
-Summary(pl.UTF-8):   Syntezator programowy działający w czasie rzeczywistym
+Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym
 Name:		ZynAddSubFX
 Version:	2.2.1
 Release:	1
