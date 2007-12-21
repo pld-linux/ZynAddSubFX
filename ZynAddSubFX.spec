@@ -10,8 +10,8 @@ Source0:	http://dl.sourceforge.net/zynaddsubfx/%{name}-%{version}.tar.bz2
 # Source0-md5:	fca8560e37d799bd20d17e22b11674d6
 #Source1:	http://dl.sourceforge.net/zynaddsubfx/%{name}-doc-%{doc_ver}.tar.gz
 Source2:	%{name}.desktop
+Patch0:		%{name}-make-jN.patch
 URL:		http://zynaddsubfx.sourceforge.net/
-BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	fftw3-devel
 BuildRequires:	fltk-devel >= 1.1.3
@@ -32,6 +32,7 @@ niezliczonej ilości instrumentów.
 
 %prep
 %setup -q
+%patch0 -p1
 sed -i -e "s|-O6|\$(OPTFLAGS)|" src/Makefile
 
 %build
