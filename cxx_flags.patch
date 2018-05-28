@@ -1,0 +1,12 @@
+diff -dur -x '*~' zynaddsubfx-3.0.3.orig/src/CMakeLists.txt zynaddsubfx-3.0.3/src/CMakeLists.txt
+--- zynaddsubfx-3.0.3.orig/src/CMakeLists.txt	2017-10-31 02:40:45.000000000 +0100
++++ zynaddsubfx-3.0.3/src/CMakeLists.txt	2018-05-28 13:51:18.000000000 +0200
+@@ -311,7 +311,7 @@
+ else (BuildForDebug)
+ 	set (CMAKE_BUILD_TYPE "Release")
+ 	
+-	set (CMAKE_CXX_FLAGS_RELEASE ${BuildOptionsBasic})
++	set (CMAKE_CXX_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_PLD})
+ 	
+ 	if (BuildForAMD_X86_64)
+ 		set (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${BuildOptions_x86_64AMD}")
