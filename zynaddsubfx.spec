@@ -1,12 +1,11 @@
-%define 	namelc zynaddsubfx
 Summary:	Realtime software synthesizer
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym
-Name:		ZynAddSubFX
+Name:		zynaddsubfx
 Version:	3.0.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://downloads.sourceforge.net/%{namelc}/%{namelc}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	66acae0913108f129aa979f3c4b65473
 Patch0:		cxx_flags.patch
 URL:		http://zynaddsubfx.sourceforge.net/
@@ -26,6 +25,7 @@ BuildRequires:	sed >= 4.0
 BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	zlib-devel
+Obsoletes:	ZynAddSubFx
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -76,7 +76,7 @@ ZynAddSubFX software synthesizer as a VST plugin.
 Syntezator ZynAddSubFX jako wtyczka VST.
 
 %prep
-%setup -qn %{namelc}-%{version}
+%setup -qn %{name}-%{version}
 
 %patch0 -p1
 
@@ -92,7 +92,7 @@ cd build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{namelc}} \
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}} \
 	$RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} -C build install \
