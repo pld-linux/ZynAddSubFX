@@ -11,7 +11,7 @@ Patch0:		cxx_flags.patch
 URL:		http://zynaddsubfx.sourceforge.net/
 BuildRequires:	alsa-lib-devel
 #BuildRequires:	doxygen
-BuildRequires:	dssi >= 0.9.0
+BuildRequires:	dssi-devel >= 0.9.0
 BuildRequires:	fftw3-devel
 BuildRequires:	fltk-devel >= 1.1.3
 BuildRequires:	jack-audio-connection-kit-devel >= 0.66.3
