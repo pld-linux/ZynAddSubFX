@@ -2,7 +2,7 @@ Summary:	Realtime software synthesizer
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym
 Name:		zynaddsubfx
 Version:	3.0.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
@@ -26,6 +26,7 @@ BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	zlib-devel
 Obsoletes:	ZynAddSubFX
+Obsoletes:	zynaddsubfx-fussion
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,6 +45,7 @@ Summary:	Realtime software synthesizer - DSSI plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin DSSI
 Group:		X11/Applications/Sound
 Obsoletes:	ZynAddSubFX-dssi
+Obsoletes:	zynaddsubfx-fussion-dssi
 Requires:	%{name} = %{version}-%{release}
 
 %description dssi
@@ -57,6 +59,7 @@ Summary:	Realtime software synthesizer - LV2 plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin LV2
 Group:		X11/Applications/Sound
 Obsoletes:	ZynAddSubFX-lv2
+Obsoletes:	zynaddsubfx-fussion-lv2
 Requires:	%{name} = %{version}-%{release}
 
 %description lv2
@@ -70,6 +73,7 @@ Summary:	Realtime software synthesizer - VST plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin VST
 Group:		X11/Applications/Sound
 Obsoletes:	ZynAddSubFX-vst
+Obsoletes:	zynaddsubfx-fussion-vst
 Requires:	%{name} = %{version}-%{release}
 
 %description vst
