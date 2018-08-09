@@ -25,7 +25,7 @@ BuildRequires:	sed >= 4.0
 BuildRequires:	xorg-lib-libICE-devel
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	zlib-devel
-Obsoletes:	ZynAddSubFx
+Obsoletes:	ZynAddSubFX
 ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,6 +43,7 @@ niezliczonej ilości instrumentów.
 Summary:	Realtime software synthesizer - DSSI plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin DSSI
 Group:		X11/Applications/Sound
+Obsoletes:	ZynAddSubFX-dssi
 Requires:	%{name} = %{version}-%{release}
 
 %description dssi
@@ -55,6 +56,7 @@ Syntezator ZynAddSubFX jako wtyczka DSSI.
 Summary:	Realtime software synthesizer - LV2 plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin LV2
 Group:		X11/Applications/Sound
+Obsoletes:	ZynAddSubFX-lv2
 Requires:	%{name} = %{version}-%{release}
 
 %description lv2
@@ -67,6 +69,7 @@ Syntezator ZynAddSubFX jako wtyczka LV2.
 Summary:	Realtime software synthesizer - VST plugin
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym, plugin VST
 Group:		X11/Applications/Sound
+Obsoletes:	ZynAddSubFX-vst
 Requires:	%{name} = %{version}-%{release}
 
 %description vst
