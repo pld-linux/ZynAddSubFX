@@ -1,12 +1,12 @@
 Summary:	Realtime software synthesizer
 Summary(pl.UTF-8):	Syntezator programowy działający w czasie rzeczywistym
 Name:		zynaddsubfx
-Version:	3.0.3
-Release:	2
+Version:	3.0.4
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	66acae0913108f129aa979f3c4b65473
+# Source0-md5:	090331a1c26f89aa52bd7e35f40ce6b6
 Patch0:		cxx_flags.patch
 URL:		http://zynaddsubfx.sourceforge.net/
 BuildRequires:	alsa-lib-devel
