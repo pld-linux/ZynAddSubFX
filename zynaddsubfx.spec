@@ -85,7 +85,7 @@ Syntezator ZynAddSubFX jako wtyczka VST.
 %prep
 %setup -qn %{name}-%{version}
 
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 
